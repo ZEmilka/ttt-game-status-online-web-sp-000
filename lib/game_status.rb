@@ -49,9 +49,11 @@ def over?(board)
 end
 
 def winner(board)
-  if WIN_COMBINATIONS.any?{|winner| winner=="X"||winner=="O"}
-    return "winner"
-  else
-    return nil
+  WIN_COMBINATIONS.each do |win_combination|
+    if win_combination=="X"
+      return "X"
+    elsif win_combination=="O"
+    else !won?(board)
+      return nil
   end
 end

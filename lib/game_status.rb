@@ -28,9 +28,7 @@ def won?(board)
 end
 
 def full?(board)
-  if board.includ? (" ")||("")
-    return false
-  else
+  board.includ? do |token|
     return true
   end
 end

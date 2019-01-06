@@ -31,6 +31,7 @@ def full?(board)
   if board.select do |token|
     return true
   end
+  end
 end
 
 def draw?(board)

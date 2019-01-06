@@ -50,7 +50,7 @@ end
 
 def winner(board)
   if WIN_COMBINATIONS.any?{|winner| winner=="X"||winner=="O"}
-    return "#{winner}"
+    return "winner"
   else
     return nil
   end

@@ -28,4 +28,5 @@ def won?(board)
 end
 
 def full?(board)
+  board.select do |token|
 end

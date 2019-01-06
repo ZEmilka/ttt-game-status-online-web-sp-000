@@ -49,7 +49,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?("X"||"O")
+  if WIN_COMBINATIONS.any?{|winner| winner=="X"||winner=="O"}
     return true
   end
 end

@@ -27,11 +27,11 @@ def won?(board)
  return false
 end
 
-#def full?(board)
-#  board.select do |token|
-#    return true
-#  end
-#end
+def full?(board)
+  board.select do |token|
+    return true
+  end
+end
 def draw?(board)
   if !won?(board) && full?(board)
     return true

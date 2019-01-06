@@ -28,7 +28,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.includ? do |token|
+  board.includ do |token|
     return true
   end
 end

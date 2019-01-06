@@ -29,7 +29,7 @@ end
 
 def full?(board)
   if board.any?{|token| "X"!=token && "O"!=token }
-    return fase
+    return false
   end
 end
 

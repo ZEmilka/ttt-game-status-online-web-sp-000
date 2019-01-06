@@ -49,4 +49,7 @@ def over?(board)
 end
 
 def winner(board)
+  if won?("X"||"O")
+    return true
+  end
 end

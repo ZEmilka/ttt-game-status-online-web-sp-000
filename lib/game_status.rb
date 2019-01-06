@@ -29,4 +29,5 @@ end
 
 def full?(board)
   board.select do |token|
+    return true
 end

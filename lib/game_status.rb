@@ -30,10 +30,10 @@ end
 def full?(board)
   if board.select do |token|
     return true
-  else
-    return false
   end
+  return false
 end
+
 def draw?(board)
   if !won?(board) && full?(board)
     return true

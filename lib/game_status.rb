@@ -28,9 +28,8 @@ def won?(board)
 end
 
 def full?(board)
-  if board.select do |token|
-    return true
-  end
+  if board.any?{|token| "X"!=token && "O"!=token }
+    return fase
   end
 end
 

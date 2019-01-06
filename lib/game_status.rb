@@ -50,9 +50,9 @@ end
 
 def winner(board)
   WIN_COMBINATIONS.each do |win_combination|
-    if win_combination.include? do "X"
+    if win_combination.include? do |"X"|
       return"X"
-    elsif win_combination.include? do "O"
+    elsif win_combination.include? do |"O"|
       return"O"
     else !won?(board)
       return nil

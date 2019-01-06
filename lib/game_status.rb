@@ -28,8 +28,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.select do |token|
+  if board.select do |token|
     return true
+  else
+    return false
   end
 end
 def draw?(board)

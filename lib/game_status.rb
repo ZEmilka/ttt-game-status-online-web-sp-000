@@ -31,6 +31,7 @@ def full?(board)
   if board.any?{|token| "X"!=token && "O"!=token }
     return false
   end
+  return true
 end
 
 def draw?(board)

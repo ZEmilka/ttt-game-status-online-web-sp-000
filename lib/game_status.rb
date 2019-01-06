@@ -28,7 +28,9 @@ def won?(board)
 end
 
 def full?(board)
-  board.select do |token|
+  if board.includ? (" ")||("")
+    return false
+  else
     return true
   end
 end
